@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery 2020</title>
+    <style>
+         body{
+            text-align: center;
+         }
+        
+    
+    </style>
+</head>
+<body>
+    <h1>Ejercicio de Jquery</h1>
+    
+        <h3>Inscribete Gratis</h3>
+        
+            <p >Usuario</p>
+            <input class="a" type="text" placeholder="Ingresa tu usuario">
+            <br>
+            <p>Constraseña</p>
+            <input class="a" type="password" placeholder="Ingresa tu contraseña">
+            <br>
+            <input class="a" type="submit" value="Enviar" id="enviar">
+        
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script>
+    let usuario="";
+    let password="";
+    $("#enviar").click(function(){
+    usuario=$("input[type='text']").val();
+    password=$("input[type='password']").val();
+    console.log(usuario);
+    console.log(password);
+    })
+    
+
+</script>
+</body>
+</html>
